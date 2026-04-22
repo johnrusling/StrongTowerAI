@@ -24,14 +24,14 @@
 - Font: Montserrat (Google Fonts) — Bold (700/800) for headings, Regular (400/500) for body
 
 **Logo**
-- `StrongTower-Transparent.svg` — main logo, renders in actual brand colors (no CSS filter)
+- `StrongTowerLogo-Transparent.svg` — main logo, renders in actual brand colors
 - `Brand Board.png` — full brand board reference (colors, typography, usage examples)
 - Logo is used at `height: 44px` in the navbar and `height: 40px` in the footer
 
 ## Key Design Decisions
 - Navbar is white (`rgba(255,255,255,0.97)`) so the full-color SVG logo is visible
 - Footer is off-white (`var(--off-white)`) for the same reason — logo shows in actual colors
-- No `filter: brightness(0) invert(1)` on any logo instance
+- Home page logo instance does NOT use `filter: brightness(0) invert(1)` — it renders in brand colors as-is
 - Hero and page-hero sections stay dark navy — logo does not appear there
 - Scroll-triggered `.fade-up` animations on cards and section content
 
@@ -45,4 +45,4 @@
 - Replace booking widget with Calendly embed
 - Add real contact details (email, phone)
 - SEO meta tags and Open Graph images
-- Favicon
+- ~~Favicon~~ — added (`StrongTowerIcon.svg`, wired to all 3 pages)
