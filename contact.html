@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Book a Call — Strong Tower AI</title>
+  <meta name="description" content="Book a free 30-minute strategy call or send us a message. Strong Tower AI helps small businesses automate faster." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ══ Navigation ══════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="StrongTower-Transparent.svg" alt="Strong Tower AI" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Get a Free Consult</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="btn btn-primary">Get a Free Consult</a>
+</div>
+
+<!-- ══ Page Hero ════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Contact</span>
+    </div>
+    <h1>Let's Talk Automation</h1>
+    <p>Book a free 30-minute strategy call, or send us a message. No pressure, no jargon — just a real conversation about what's possible for your business.</p>
+  </div>
+</section>
+
+<!-- ══ Contact Body ══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Lead Capture Form -->
+      <div>
+        <div class="form-card fade-up">
+          <h2>Send Us a Message</h2>
+          <p>Tell us a little about your business and what's keeping you busy. We'll be in touch within one business day.</p>
+
+          <form id="leadForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Business Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@yourbusiness.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="company">Business Name *</label>
+              <input type="text" id="company" name="company" placeholder="Your Business Name" required />
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry</label>
+              <select id="industry" name="industry">
+                <option value="" disabled selected>Select your industry</option>
+                <option>Real Estate</option>
+                <option>Healthcare / Medical</option>
+                <option>Legal / Law Firm</option>
+                <option>E-Commerce / Retail</option>
+                <option>Consulting / Coaching</option>
+                <option>Financial Services</option>
+                <option>Logistics / Transportation</option>
+                <option>Home Services / Trades</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="challenge">What's Your Biggest Automation Challenge? *</label>
+              <textarea id="challenge" name="challenge" placeholder="e.g. We spend too much time on follow-up emails and data entry. We're losing leads because we can't respond fast enough..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="budget">Monthly Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range (optional)</option>
+                <option>Under $500/month</option>
+                <option>$500 – $1,000/month</option>
+                <option>$1,000 – $2,500/month</option>
+                <option>$2,500 – $5,000/month</option>
+                <option>$5,000+/month</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              Send My Message
+            </button>
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We'll review your message and get back to you within one business day — usually much sooner.</p>
+            <p style="margin-top:12px; font-weight:600; color:var(--navy);">In the meantime, feel free to book a strategy call below.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar: Info + Booking -->
+      <div class="contact-sidebar">
+
+        <!-- Contact Info -->
+        <div class="info-card fade-up">
+          <h3>Get In Touch</h3>
+          <p>Prefer to reach out directly? We're here for you.</p>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div class="info-item-text">
+                <strong>Email</strong>
+                <span>hello@strongtowerai.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div class="info-item-text">
+                <strong>Phone</strong>
+                <span>(555) 000-0000</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="info-item-text">
+                <strong>Response Time</strong>
+                <span>Within 1 business day</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="info-item-text">
+                <strong>Location</strong>
+                <span>United States (Remote)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calendar Booking -->
+        <div class="booking-card fade-up">
+          <span class="section-label">Free Strategy Call</span>
+          <h3>Book a 30-Minute Call</h3>
+          <p>Pick a time that works for you. We'll discuss your goals and walk through what automation could look like for your business — no strings attached.</p>
+
+          <div id="bookingStep1">
+            <p style="font-size:0.82rem; font-weight:700; color:var(--navy); letter-spacing:0.04em; margin-bottom:12px; margin-top:4px;">AVAILABLE THIS WEEK</p>
+            <div class="booking-times" id="bookingTimes">
+              <button class="booking-time-btn" data-time="Mon, Apr 28 · 10:00 AM EST">
+                Mon, Apr 28 · 10:00 AM <span>EST</span>
+              </button>
+              <button class="booking-time-btn" data-time="Mon, Apr 28 · 2:00 PM EST">
+                Mon, Apr 28 · 2:00 PM <span>EST</span>
+              </button>
+              <button class="booking-time-btn" data-time="Tue, Apr 29 · 11:00 AM EST">
+                Tue, Apr 29 · 11:00 AM <span>EST</span>
+              </button>
+              <button class="booking-time-btn" data-time="Wed, Apr 30 · 9:00 AM EST">
+                Wed, Apr 30 · 9:00 AM <span>EST</span>
+              </button>
+              <button class="booking-time-btn" data-time="Thu, May 1 · 3:00 PM EST">
+                Thu, May 1 · 3:00 PM <span>EST</span>
+              </button>
+            </div>
+            <button class="btn btn-primary" id="confirmBooking" style="width:100%; justify-content:center; display:none;">
+              Confirm This Time
+            </button>
+          </div>
+
+          <!-- Booking confirm step -->
+          <div id="bookingStep2" style="display:none;">
+            <div style="background:rgba(21,101,192,0.1); border:1.5px solid rgba(21,101,192,0.2); border-radius:8px; padding:16px; margin-bottom:16px;">
+              <p style="font-size:0.8rem; font-weight:700; color:var(--navy); margin-bottom:4px;">SELECTED TIME</p>
+              <p style="font-size:0.95rem; font-weight:700; color:var(--blue);" id="selectedTimeDisplay"></p>
+            </div>
+            <div class="form-group" style="margin-bottom:12px;">
+              <label for="bookingName">Your Name *</label>
+              <input type="text" id="bookingName" placeholder="Full Name" required />
+            </div>
+            <div class="form-group" style="margin-bottom:16px;">
+              <label for="bookingEmail">Your Email *</label>
+              <input type="email" id="bookingEmail" placeholder="you@yourbusiness.com" required />
+            </div>
+            <button class="btn btn-primary" id="submitBooking" style="width:100%; justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              Confirm My Booking
+            </button>
+            <button id="backToTimes" style="width:100%; background:none; border:none; font-family:'Montserrat',sans-serif; font-size:0.82rem; color:var(--gray-mid); cursor:pointer; padding:10px; margin-top:6px;">← Choose a different time</button>
+          </div>
+
+          <!-- Booking confirmed -->
+          <div id="bookingStep3" style="display:none; text-align:center; padding:16px 0;">
+            <div style="width:56px; height:56px; border-radius:50%; background:#E8F5E9; display:flex; align-items:center; justify-content:center; margin:0 auto 16px;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#2E7D32" stroke-width="2.5" width="28" height="28"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem; margin-bottom:8px;">You're Booked!</h3>
+            <p style="font-size:0.88rem; color:var(--gray-dark);">A calendar invite and confirmation email are on their way. We're looking forward to speaking with you!</p>
+            <p style="margin-top:12px; font-size:0.82rem; font-weight:700; color:var(--blue);" id="bookingConfirmTime"></p>
+          </div>
+
+          <p style="font-size:0.75rem; color:var(--gray-mid); margin-top:16px; text-align:center;">
+            100% free. No obligation. No hard sell.
+          </p>
+        </div>
+
+        <!-- What to Expect -->
+        <div style="background:var(--gray-light); border-radius:var(--radius-lg); padding:28px 24px;" class="fade-up">
+          <h3 style="font-size:1rem; margin-bottom:16px;">What to Expect on the Call</h3>
+          <ul style="display:flex; flex-direction:column; gap:12px;">
+            <li style="display:flex; gap:10px; align-items:flex-start;">
+              <span style="color:var(--blue); font-weight:800; flex-shrink:0; margin-top:1px;">01</span>
+              <span style="font-size:0.85rem; color:var(--gray-dark);">We'll learn about your business and biggest operational pain points</span>
+            </li>
+            <li style="display:flex; gap:10px; align-items:flex-start;">
+              <span style="color:var(--blue); font-weight:800; flex-shrink:0; margin-top:1px;">02</span>
+              <span style="font-size:0.85rem; color:var(--gray-dark);">We'll identify 2-3 quick wins where automation could save you time immediately</span>
+            </li>
+            <li style="display:flex; gap:10px; align-items:flex-start;">
+              <span style="color:var(--blue); font-weight:800; flex-shrink:0; margin-top:1px;">03</span>
+              <span style="font-size:0.85rem; color:var(--gray-dark);">You'll leave with a clear picture of what's possible and what it would cost</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ Strip ═════════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2>Common Questions</h2>
+    </div>
+    <div style="max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
+      <details style="background:white; border:1px solid var(--gray-light); border-radius:var(--radius); overflow:hidden;" class="fade-up">
+        <summary style="padding:20px 24px; font-weight:700; font-size:0.95rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--navy);">
+          How long does it take to get started?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="18" height="18" style="flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p style="padding:0 24px 20px; font-size:0.9rem;">Most clients go from strategy call to live automations within 30 days. Simple setups can be deployed even faster — sometimes within a week.</p>
+      </details>
+      <details style="background:white; border:1px solid var(--gray-light); border-radius:var(--radius); overflow:hidden;" class="fade-up">
+        <summary style="padding:20px 24px; font-weight:700; font-size:0.95rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--navy);">
+          Do I need a technical background?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="18" height="18" style="flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p style="padding:0 24px 20px; font-size:0.9rem;">Not at all. We handle all the technical work. You don't need to know how to code or understand how the tools work under the hood — you just need to know your business.</p>
+      </details>
+      <details style="background:white; border:1px solid var(--gray-light); border-radius:var(--radius); overflow:hidden;" class="fade-up">
+        <summary style="padding:20px 24px; font-weight:700; font-size:0.95rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--navy);">
+          What tools and platforms do you work with?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="18" height="18" style="flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p style="padding:0 24px 20px; font-size:0.9rem;">We work with the tools you already use — including HubSpot, Salesforce, GoHighLevel, Zapier, Make, Google Workspace, Microsoft 365, and dozens more. If you're using it, we can likely automate it.</p>
+      </details>
+      <details style="background:white; border:1px solid var(--gray-light); border-radius:var(--radius); overflow:hidden;" class="fade-up">
+        <summary style="padding:20px 24px; font-weight:700; font-size:0.95rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; color:var(--navy);">
+          What happens after you build my automations?
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="18" height="18" style="flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <p style="padding:0 24px 20px; font-size:0.9rem;">We don't just build and disappear. Ongoing clients get monitoring, maintenance, and regular optimization reviews. We're a long-term partner, not a one-time vendor.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Footer ════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="StrongTower-Transparent.svg" alt="Strong Tower AI" />
+        <p>AI Automation. Simple, Fast, Affordable. We help small and mid-sized businesses streamline operations and scale smarter.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="contact.html">AI Chatbots</a></li>
+          <li><a href="contact.html">Workflow Automation</a></li>
+          <li><a href="contact.html">Email Sequences</a></li>
+          <li><a href="contact.html">Custom Integrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="contact.html">Free Strategy Call</a></li>
+          <li><a href="contact.html">Send Us a Message</a></li>
+          <li><a href="about.html">Our Story</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Strong Tower AI. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter / X">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
