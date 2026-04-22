@@ -68,10 +68,24 @@
 
   // ── Render a message bubble ──────────────────────────────────
   function appendMessage(role, text) {
+    const hasBooking = role === 'assistant' && text.includes('[SHOW_BOOKING]');
+    const cleanText = text.replace('[SHOW_BOOKING]', '').trim();
+
     const wrap = document.createElement('div');
     wrap.className = `st-msg st-msg-${role}`;
-    wrap.textContent = text;
+    wrap.textContent = cleanText;
     msgList.appendChild(wrap);
+
+    if (hasBooking) {
+      const btn = document.createElement('button');
+      btn.className = 'st-booking-btn';
+      btn.textContent = '📅 Book My Free Strategy Call';
+      btn.addEventListener('click', () => {
+        Calendly.initPopupWidget({ url: 'https://calendly.com/john-rusling/30min' });
+      });
+      msgList.appendChild(btn);
+    }
+
     msgList.scrollTop = msgList.scrollHeight;
   }
 

@@ -987,6 +987,22 @@ p  { color: var(--gray-dark); }
 #st-chat-send:hover { background: var(--blue-light); }
 #st-chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
 
+.st-booking-btn {
+  align-self: flex-start;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 2px;
+}
+.st-booking-btn:hover { background: var(--blue-light); transform: scale(1.03); }
+
 @media (max-width: 400px) {
   #st-chat-panel { width: calc(100vw - 32px); right: -4px; }
   #st-chatbot { bottom: 16px; right: 16px; }
